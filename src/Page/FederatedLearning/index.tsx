@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { Row, Col, Card, Spin, Steps } from 'antd'
+import { Row, Col, Card, Spin, Steps, InputNumber } from 'antd'
 import { SmileOutlined, ApartmentOutlined, BugOutlined, LineChartOutlined } from '@ant-design/icons'
 import Style from './index.module.scss'
 
@@ -9,23 +9,23 @@ const items = [
   {
     title: '配置客户端',
 
-   /*  status: 'process', */
+    /*  status: 'process', */
     icon: <ApartmentOutlined />
   },
   {
     title: '训练',
-  /*   status: 'wait', */
+    /*   status: 'wait', */
     icon: <BugOutlined />
   },
   {
     title: '分析',
-  /*   status: 'wait', */
+    /*   status: 'wait', */
     icon: <LineChartOutlined />
   },
   {
     title: 'Success',
 
-   /*  status: 'wait', */
+    /*  status: 'wait', */
     icon: <SmileOutlined />
   }
 ]
@@ -45,10 +45,36 @@ const MySteps = styled(Steps)`
   }
 `
 
+const MyInputNumber = styled(InputNumber)`
+  .ant-input-number-handler-wrap {
+    opacity: 1 !important;
+  }
+`
+
 const FederatedLearning = () => {
+  const onChange = (value: number) => {
+    console.log('changed', value)
+  }
   return (
     <div className={Style.container}>
-      <div className={Style.left}></div>
+      <div className={Style.left}>
+        <div>
+          <p className={Style.title}>配置客户端</p>
+          <div className={Style.line}>
+            <p className={Style.headerText}>客户端数量</p>
+            <MyInputNumber
+              width={130}
+              height={30}
+              min={1}
+              max={10}
+              defaultValue={3}
+              onChange={(val) => {
+                onChange(Number(val))
+              }}
+            ></MyInputNumber>
+          </div>
+        </div>
+      </div>
       <div className={Style.right}>
         <div className={Style.header}>
           <MySteps current={1} labelPlacement='vertical' items={items} />

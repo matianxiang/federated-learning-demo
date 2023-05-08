@@ -10,6 +10,34 @@
     width: 250px;
     /* background-color: #bfa; */
     padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-left: 18px;
+
+    div {
+      .title {
+        font-weight: 500;
+        line-height: 24px;
+        font-size: 16px;
+      }
+
+      .line {
+        margin-top: 12px;
+        font-size: 14px;
+        /* line-height: 30px; */
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: content-box;
+
+        .headerText {
+          height: 30px;
+          margin: 0px;
+          line-height: 30px;
+        }
+      }
+    }
   }
   .right {
     flex: 1;
@@ -22,7 +50,7 @@
       /* background-color: aqua; */
       /* width: 100; */
       box-sizing: border-box;
-      border-bottom: 1px solid #d8dae2  ;
+      border-bottom: 1px solid #d8dae2;
     }
     .content {
       flex: 1;
