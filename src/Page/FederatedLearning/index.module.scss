@@ -1,0 +1,32 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(#fff, #d5f9ec);
+  display: flex;
+  flex-direction: row;
+
+  .left {
+    height: 100vh;
+    width: 250px;
+    /* background-color: #bfa; */
+    padding-right: 50px;
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      height: 80px;
+      margin: 24px 120px 0 12px;
+      /* background-color: aqua; */
+      /* width: 100; */
+      box-sizing: border-box;
+      border-bottom: 1px solid #d8dae2  ;
+    }
+    .content {
+      flex: 1;
+      /*  background-color: brown; */
+    }
+  }
+}
