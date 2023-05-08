@@ -20,7 +20,10 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  "paths": {
+    "@/*": ["./src/*"]  // "./src/*"是src文件相对于当前文件(tsconfig.json)的路径
+  },
   "include": [
     "src"
-  ]
+  ],
 }

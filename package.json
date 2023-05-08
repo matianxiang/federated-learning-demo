@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@antv/graphin": "^2.7.16",
-    "@antv/graphin-components": "^2.4.0",
-    "@antv/graphin-icons": "^1.0.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -24,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev":"react-scripts start",
+    "dev": "react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
