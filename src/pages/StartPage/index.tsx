@@ -5,14 +5,15 @@ import { Button } from 'antd'
 interface Props {
   onChange: () => void
 }
-const StartPage = (props:Props) => {
+const StartPage = (props: Props) => {
   return (
     <div className={Style.Div}>
       <div className={Style.LogoBox}>
         <img src={Logo} alt='Logo' />
         <p className={Style.p}>Privacy Data Sharing System : Base On Federated Learning</p>
         <div className={Style.ButtonBox}>
-          <Button type='dashed' ghost onClick={()=>props.onChange()}>
+          <Button type='dashed' ghost onClick={() => {
+            props.onChange()}}>
             进入系统
           </Button>
         </div>

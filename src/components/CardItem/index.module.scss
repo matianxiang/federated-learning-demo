@@ -1,0 +1,39 @@
+.box {
+  width: 256px;
+  padding: 20px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #303133;
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-weight: 500;
+    color: #313234;
+  }
+
+  .text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rateBox {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0 12px;
+  }
+
+  .link {
+    color: rgb(125, 113, 233);
+    cursor: pointer;
+  }
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+}

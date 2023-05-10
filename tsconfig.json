@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -21,9 +17,9 @@
     "jsx": "react-jsx"
   },
   "paths": {
-    "@/*": ["./src/*"]  // "./src/*"是src文件相对于当前文件(tsconfig.json)的路径
+    "@/*": ["./src/*"] // "./src/*"是src文件相对于当前文件(tsconfig.json)的路径
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src", "src/data"],
+  "typeRoots": ["./node_modules/@types/"],
+  "types": ["echarts"]
 }

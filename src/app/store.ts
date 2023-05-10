@@ -1,9 +1,10 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import counterReducer from '../features/counter/counterSlice';
-
+import progressReducer from '../features/process/processSlice';
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    process: progressReducer,
   },
 });
 
