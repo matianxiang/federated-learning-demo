@@ -67,7 +67,7 @@ const Echart = (props: props) => {
     })
 
     myChart.setOption({
-      animationDuration: 10000,
+      animationDuration: 15000,
       dataset: [
         {
           id: 'dataset_raw',
