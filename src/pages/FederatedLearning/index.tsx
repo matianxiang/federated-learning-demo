@@ -258,10 +258,21 @@ const FederatedLearning = () => {
                   description: `The process is ${process === 'initial' ? 'loading' : process === 'loading' ? 'training' : 'finish'}`
                 })
               }}
-              disabled={disBtn}
+              disabled={disBtn || process === 'finish'}
             >
               训练
             </MyButton>
+            {process === 'finish' && (
+              <Button
+                type='primary'
+                style={{ marginLeft: '8px' }}
+                onClick={() => {
+                  dispatch(update())
+                }}
+              >
+                重新训练
+              </Button>
+            )}
           </div>
         </div>
       </div>

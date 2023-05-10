@@ -34,6 +34,9 @@ export const processSlice = createSlice({
                 case 'training':
                     state.status = 'finish'
                     break
+                case 'finish':
+                    state.status = 'initial'
+                    break
             }
         }
     },

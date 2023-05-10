@@ -13,7 +13,8 @@ const StartPage = (props: Props) => {
         <p className={Style.p}>Privacy Data Sharing System : Base On Federated Learning</p>
         <div className={Style.ButtonBox}>
           <Button type='dashed' ghost onClick={() => {
-            props.onChange()}}>
+            props.onChange()}}
+            >
             进入系统
           </Button>
         </div>
