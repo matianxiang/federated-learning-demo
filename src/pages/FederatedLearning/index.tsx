@@ -16,23 +16,23 @@ import initial_data from '../../data/initial_data'
 
 const items = [
   {
-    title: '配置客户端',
+    title: '模型分发',
 
     /*  status: 'process', */
     icon: <ApartmentOutlined />
   },
   {
-    title: '载入测试集',
+    title: '训练',
     /*   status: 'wait', */
     icon: <BugOutlined />
   },
   {
-    title: '训练',
+    title: '聚合&更新',
     /*   status: 'wait', */
     icon: <LineChartOutlined />
   },
   {
-    title: 'Success',
+    title: '训练完成',
 
     /*  status: 'wait', */
     icon: <SmileOutlined />
