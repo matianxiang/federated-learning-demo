@@ -19,7 +19,7 @@
   "paths": {
     "@/*": ["./src/*"] // "./src/*"是src文件相对于当前文件(tsconfig.json)的路径
   },
-  "include": ["src", "src/data"],
+  "include": ["src", "data"],
   "typeRoots": ["./node_modules/@types/"],
   "types": ["echarts"]
 }

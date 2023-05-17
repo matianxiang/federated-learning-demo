@@ -1,10 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react'
 import * as echarts from 'echarts'
 import { mnist_2nn, mnist_cnn, wideResNet } from '../../data/epsilon_500_models'
-interface props {
-  width: number
-}
-const Echart = (props: props) => {
+
+const Demo = () => {
   const chartRef = useRef<HTMLDivElement>(null)
   const data: any = [['Accuracy', 'Model', 'Communicate_round']]
   for (let i = 0; i < 500; i++) {
@@ -90,10 +88,6 @@ const Echart = (props: props) => {
     } as any)
   }, [])
 
-   return <div ref={chartRef} style={{ width: props.width, height: '100%' }} />
+  return <div ref={chartRef} style={{ width: '800px', height: '500px', paddingTop: '100px' }}></div>
 }
-export default Echart
-
-
-
-
+export default Demo
